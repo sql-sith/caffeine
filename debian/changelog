@@ -1,0 +1,32 @@
+caffeine (2.5) saucy; urgency=low
+
+  * New maintainer: Reuben Thomas <rrt@sc3d.org>
+  * Fix right-click on icon (LP #892663)
+  * Several new localisations.
+  * Update and clean up packaging.
+  * Replace autostart option with an XDG autostart .desktop file.
+  * Remove specific support for Quake Live.
+  * Require appindicator3; remove non-appindicator support.
+  * Put requirement for notify support in package, not code.
+  * Remove ability to disable icon: this should be done by the desktop
+    environment, not the application.
+  * Remove hash-bang lines from non-executable files (fix LP #931875).
+  * Fix race condition for notifications, patch from André Ericson
+    (LP #892865).
+  * Fix i18n issues (LP #941495).
+  * Fix Open Build Service desktop file errors (LP #931874).
+  * Add dependencies for all required libraries (LP #1093324).
+  * Fix recognition of apps which mention their name in their arguments
+    (LP #1249796).
+  * Use freedesktop ScreenSaver DBus API instead of per-desktop APIs.
+    (LP #1239935).
+  * Put description string on one line in setup.py to placate
+    rpmbuild (LP #595889).
+  * Remove non-working Flash support.
+  * Remove custom logging module.
+  * Remove --preferences command-line option, no longer needed.
+  * Remove --time command-line option: we're not supporting timed
+    disabling any more.
+  * Make Ctrl+C work (LP #907517).
+
+ -- Reuben Thomas <rrt@sc3d.org>  Mon, 09 Dec 2013 00:01:47 +0000

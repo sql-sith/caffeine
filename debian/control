@@ -1,0 +1,18 @@
+Source: caffeine
+Section: misc
+Priority: optional
+Maintainer: Reuben Thomas <rrt@sc3d.org>
+Build-Depends: debhelper (>= 8), dh-python, python-all (>= 2.6.6-3~), python-setuptools
+X-Python-Version: >= 2.6
+Standards-Version: 3.8.3
+Homepage: https://launchpad.net/caffeine
+
+Package: caffeine
+Architecture: all
+Depends:${shlibs:Depends}, ${misc:Depends}, ${python:Depends},
+    gir1.2-gtk-2.0, gir1.2-appindicator3-0.1,
+    python-dbus, python-xdg, python-kaa-metadata
+Description: Prevent the desktop becoming idle
+ Caffeine allows the user to prevent the desktop becoming idle,
+ either manually or when certain applications are run. This
+ prevents screen-blanking, locking, suspending, and so on.
